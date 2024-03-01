@@ -8,10 +8,10 @@ class Database {
     private $password = '';
     public $pdo ;
 
-    public function __construct() 
+    public function __construct(string $dbname) 
     {
         // Create a new PDO instance    
-        $dsn = "mysql:dbname=data;host=$this->host";
+        $dsn = "mysql:dbname=$dbname;host=$this->host";
 
         $this->pdo = new PDO($dsn,$this->username,$this->password,
                     [PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION ,

@@ -34,7 +34,7 @@
     require '../../vendor/autoload.php';
     use \App\Classes\Database;
 
-    $databse = new Database();
+    $databse = new Database('data');
     $pdo = $databse->pdo;
     // Récupérer l'ID du collaborateur depuis les paramètres d'URL
     if (isset($_GET['id'])) {

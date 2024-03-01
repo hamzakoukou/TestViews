@@ -2,7 +2,7 @@
 require '../../vendor/autoload.php';
 use \App\Classes\Database;
 
-$databse = new Database();
+$databse = new Database('data');
 $pdo = $databse->pdo;
 
 
@@ -78,6 +78,8 @@ $condition = null;
         </form>
     </div>
 </body>
+
+<?php var_dump($_POST)?>
 
 <script>
 $(document).ready(function() {

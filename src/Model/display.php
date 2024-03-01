@@ -2,7 +2,7 @@
 require '../../vendor/autoload.php';
 use \App\Classes\Database;
 
-$databse = new Database();
+$databse = new Database('data');
 $pdo = $databse->pdo;
 
 $query = $pdo->query("SELECT * FROM collaborateur");

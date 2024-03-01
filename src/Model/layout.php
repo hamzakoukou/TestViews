@@ -11,6 +11,9 @@
 </head>
 <body>
     <div class="container">
+      <div>
+        <h1></h1>
+      </div>
       <button type="button" id="display-button" class="btn btn-secondary">Display</button>
     </div>
 
